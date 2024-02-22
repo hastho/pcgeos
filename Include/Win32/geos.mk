@@ -612,8 +612,8 @@ CCOM_MODEL	?= -ml
 # -of+ -> The above but more agressive
 # -fpi87 -> generate x87 instructions
 
-CCOMFLAGS       += -D__GEOS__ -D__WATCOM__ -w4 -fpi87\
-		   -zu -of -of+ -ol -ol+ -s -ecc -zp1 -ei -zdp -d2 -hc\
+CCOMFLAGS       += -D__GEOS__ -D__WATCOM__ -w4 \
+		   -zu -of+ -s -ecc -zp1 -ei -zdp -d2 -hc\
 		   $(CCOM_MODEL)
 
 #if defined(linux)
@@ -631,7 +631,7 @@ CCOMFLAGS += $(.INCLUDES:N*/Include*:S/\//\\/g:S/^-I/-i=/g) \
 # Addon flags to be appended to the end of the CCOMFLAGS when wcc is executed.
 # One variant for EC targets, one for NC target
 # Set here to default if not given from the outside (via local.mk)
-WCCNCOPTFLAGS ?= -ox
+WCCNCOPTFLAGS ?= -olmr
 WCCECOPTFLAGS ?= 
 
 #if $(PRODUCT) == "NDO2000"
