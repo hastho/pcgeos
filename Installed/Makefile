@@ -100,11 +100,11 @@ minimalLibrary	: kernel swap sound net ui isui motif spool text mailbox \
 		  basicdb gridlib gsol treplib
 #ascii
 
-prefLibs	: prefvid prefts preftd \
+prefLibs	: prefvid prefts preftd preflink \
 		  prefsnd prefos prefmous preflo preflf prefkbd \
 		  prefintl prefcomp prefbg prefpntc preffont configui
 
-# prefs not used preflvl prefuic prefui prefts prefspui prefsock preflink preflang
+# prefs not used preflvl prefuic prefui prefspui prefsock preflang
 
 # Geos impex libraries
 impex_libs	: dib bmp clp ico pcx tif \
@@ -515,8 +515,8 @@ Installed/Library/Pref/Prefkbd:		ui config MAKELIB
 preflf	: Installed/Library/Pref/Preflf
 Installed/Library/Pref/Preflf:		ui config MAKELIB
 
-#preflink	: Installed/Library/Pref/Preflink
-#Installed/Library/Pref/Preflink:	ui config MAKELIB
+preflink	: Installed/Library/Pref/Preflink
+Installed/Library/Pref/Preflink:	ui config MAKELIB
 
 preflo	: Installed/Library/Pref/Preflo
 Installed/Library/Pref/Preflo:		ui config saver net MAKELIB
@@ -840,7 +840,7 @@ tosh24	: Installed/Driver/Printer/DotMatrix/Tosh24
 Installed/Driver/Printer/DotMatrix/Tosh24:	spool MAKEDRV
 
 pscript	: Installed/Driver/Printer/PScript
-Installed/Driver/Printer/PScript:		spool eps ps2pdf MAKEDRV
+Installed/Driver/Printer/PScript:		spool eps MAKEDRV
 
 dumb	: Installed/Driver/Printer/Ascii/Dumb
 Installed/Driver/Printer/Ascii/Dumb:		spool MAKEDRV
@@ -1666,11 +1666,11 @@ Installed/Library/CoProcessor/Int8087:		kernel math MAKELIB
 intx87	: Installed/Library/CoProcessor/Intx87
 Installed/Library/CoProcessor/Intx87:		kernel math MAKELIB
 
-taskmax	: Installed/Driver/Task/Taskmax
-Installed/Driver/Task/Taskmax:			ui text MAKEDRV
+taskmax	: Installed/Driver/Task/TaskMax
+Installed/Driver/Task/TaskMax:			ui text MAKEDRV
 
 bnf : Installed/Driver/Task/BNF
-Installed/Driver/Task/BNF:				ui text MAKEDRV
+Installed/Driver/Task/BNF:			ui text MAKEDRV
 
 cvttool	: Installed/Library/FMTools/CvtTool
 Installed/Library/FMTools/CvtTool:		ui convert MAKELIB
