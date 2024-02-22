@@ -35,7 +35,7 @@ softRIPInfo	segment	resource
 				CC_NO_CUSTOM,
 				SC_NO_SCSI,
 				RC_NO_RS232C,
-				CC_NO_CENTRONICS,
+				CC_CENTRONICS,
 				FC_FILE,
 				AC_NO_APPLETALK >,
 					; ---- PrinterSmarts -----------
@@ -157,7 +157,7 @@ softRIPCInfo	segment	resource
 				CC_NO_CUSTOM,
 				SC_NO_SCSI,
 				RC_NO_RS232C,
-				CC_NO_CENTRONICS,
+				CC_CENTRONICS,
 				FC_FILE,
 				AC_NO_APPLETALK >,
 					; ---- PrinterSmarts -----------
