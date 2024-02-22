@@ -137,7 +137,6 @@ include pscriptgenerf35Info.asm
 include pscriptgenerf39cartInfo.asm
 include pscriptgenerCf35Info.asm
 include SoftRIPInfo.asm			; device for GhostScript printing
-include hostPrinterInfo.asm
 
 ; Not currently used, so removed - Don 7/11/00
 ;include Color/Correct/correctInk.asm    ; color correction table

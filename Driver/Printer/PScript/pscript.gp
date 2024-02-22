@@ -38,7 +38,6 @@ type	driver, single
 library	geos
 library	spool
 library	eps noload
-library ps2pdf
 #
 # Make this module fixed so we can put the strategy routine there
 #
@@ -67,6 +66,5 @@ resource generf39cartInfo	data, shared, read-only, conforming
 resource qmsColorScriptf35Info 	data, shared, read-only, conforming
 resource qmsPS410f43Info 	data, shared, read-only, conforming
 resource softRIPInfo		data, shared, read-only, conforming
-resource hostPrinterInfo	data, shared, read-only, conforming
 
 resource OptionsIBM4019PSResource	ui-object

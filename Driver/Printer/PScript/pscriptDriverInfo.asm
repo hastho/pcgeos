@@ -13,7 +13,6 @@ REVISION HISTORY:
 	Name	Date		Description
 	----	----		-----------
 	Jim	5/15/90		Initial revision
-   Falk	2015			Added the new Host Integration (PS2PDF) printer to the list
 
 DESCRIPTION:
 	Driver info for the PostScript printer driver
@@ -161,7 +160,6 @@ DefPrinter PD_VAR5500, "Varityper Series 4000/5500 (PostScript) v52.2", generf13
 DefPrinter PD_VAR600P, "Varityper VT-600P (PostScript) v48.0", generf13Info
 DefPrinter PD_SOFTRIP, "GhostScript Software RIP B/W (PostScript)", softRIPInfo
 DefPrinter PD_SOFTRIPC, "GhostScript Software RIP color (PostScript)", softRIPCInfo
-DefPrinter PD_HOSTPRINTER, "Host Integration Printer", hostPrinterInfo
 endif
 
 ;----------------------------------------------------------------------------
