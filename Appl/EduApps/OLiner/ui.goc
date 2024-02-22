@@ -120,7 +120,7 @@
 }
 
 @object GenTriggerClass FindMenuItem = {
-	GI_visMoniker = "Find";
+	GI_visMoniker = 'F', "Find";
 	GI_states = @default & ~GS_ENABLED;
 	GI_attrs = @default | GA_KBD_SEARCH_PATH;
 	GTI_destination = (TO_APP_MODEL);
@@ -130,21 +130,21 @@
 }
 
 @object GenInteractionClass TopicMenu = {
-	GI_visMoniker = "Topics";
+	GI_visMoniker = 'T', "Topics";
 	GI_comp = @CreateMTopicButton, @CreateSTopicButton, @DeleteTopicTrigger,
 				 @MoveTopicTrigger, @EditTopicTrigger, @TopicSubGroup;
 	GII_visibility = GIV_POPUP;
 }
 
 @object GenTriggerClass CreateMTopicButton = {
-	GI_visMoniker = "Create Main Topic";
+	GI_visMoniker = 'M', "Create Main Topic";
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_OPEN_CREATE_TOPIC;
 	ATTR_GEN_DESTINATION_CLASS = {(ClassStruct *)&OLDocumentClass};
 }
 
 @object GenTriggerClass CreateSTopicButton = {
-	GI_visMoniker = "Create Sub Topic";
+	GI_visMoniker = 'S', "Create Sub Topic";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_OPEN_CREATE_TOPIC;
@@ -152,7 +152,7 @@
 }
 
 @object GenTriggerClass DeleteTopicTrigger = {
-	GI_visMoniker = "Delete Topic";
+	GI_visMoniker = 'D', "Delete Topic";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_DELETE_ITEM;
@@ -160,7 +160,7 @@
 }
 
 @object GenTriggerClass MoveTopicTrigger = {
-	GI_visMoniker = "Move Topic";
+	GI_visMoniker = 'M', "Move Topic";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_OPEN_MOVE_BOX;
@@ -169,7 +169,7 @@
 }
 
 @object GenTriggerClass EditTopicTrigger = {
-	GI_visMoniker = "Rename Topic";
+	GI_visMoniker = 'R', "Rename Topic";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_OPEN_EDIT_TOPIC;
@@ -183,7 +183,7 @@
 }
 
 @object GenTriggerClass ExpandTopicsTrigger = {
-	GI_visMoniker = "Expand all Topics";
+	GI_visMoniker = 'x', "Expand all Topics";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_EXPAND_ALL_TOPICS;
@@ -192,7 +192,7 @@
 }
 
 @object GenTriggerClass ContractTopicsTrigger = {
-	GI_visMoniker = "Contract all Topics";
+	GI_visMoniker = 'C', "Contract all Topics";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_CONTRACT_ALL_TOPICS;
@@ -201,14 +201,14 @@
 }
 
 @object GenInteractionClass CardMenu = {
-	GI_visMoniker = "Cards";
+	GI_visMoniker = 'C', "Cards";
 	GI_comp = @SaveCardButton, @NewCardButton, @DeleteCardTrigger,
 				 @MoveCardTrigger;
 	GII_visibility = GIV_POPUP;
 }
 
 @object GenTriggerClass NewCardButton = {
-	GI_visMoniker = "New Card";
+	GI_visMoniker = 'N', "New Card";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_NEW_CARD;
@@ -216,7 +216,7 @@
 }
 
 @object GenTriggerClass SaveCardButton = {
-	GI_visMoniker = "Save New Card";
+	GI_visMoniker = 'S', "Save New Card";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_SAVE_ITEM;
@@ -224,7 +224,7 @@
 }
 
 @object GenTriggerClass DeleteCardTrigger = {
-	GI_visMoniker = "Delete Card";
+	GI_visMoniker = 'D', "Delete Card";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_DELETE_ITEM;
@@ -232,7 +232,7 @@
 }
 
 @object GenTriggerClass MoveCardTrigger = {
-	GI_visMoniker = "Move Card";
+	GI_visMoniker = 'M', "Move Card";
 	GI_states = @default & ~GS_ENABLED;
 	GTI_destination = (TO_APP_MODEL);
 	GTI_actionMsg = MSG_OLINER_DOC_OPEN_MOVE_BOX;
@@ -241,7 +241,7 @@
 }
 
 @object GenInteractionClass OptionsMenu = {
-	GI_visMoniker = "Options";
+	GI_visMoniker = 'O', "Options";
 	GI_comp = @CardWinOptTrigger, @ToolBarOptTrigger, @DateStampOptTrigger;
 	GII_visibility = GIV_POPUP;
 }
