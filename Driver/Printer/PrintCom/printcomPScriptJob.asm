@@ -46,8 +46,6 @@ include Job/jobStartPScript.asm
 include Job/jobEndPScript.asm
 include Job/Custom/customLJ4PScript.asm
 include Job/Custom/customIBM4019PScript.asm
-include Job/Custom/customHostIntegration.asm	
-									; fr - ps 2 pdf code and host call
 
 
 COMMENT @%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
