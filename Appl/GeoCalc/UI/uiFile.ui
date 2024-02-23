@@ -66,24 +66,10 @@ GCDocumentControl = GenDocumentControl {
 	documentTokenID = "MANUFACTURER_ID_GEOWORKS";
 	noNameText = "No Document";
 
-	/* 
-	 * NOTE:  Don't use _APP_NAME_IS_SPREADSHEET here, because
-	 * it'll dork products that want to keep the directory name
-	 * the same.
-	 */
-
-#if DO_DBCS
 #if _APP_NAME_IS_SPREADSHEET
-	templateDir = "Spreadsheet";
-#else
-	templateDir = "GeoCalc";
-#endif
-#else
-#ifdef _APP_NAME_IS_SPREADSHEET
 	templateDir = "Spreadsheet Templates";
 #else
 	templateDir = "GeoCalc Templates";
-#endif
 #endif
 
 #if _WIN_MENU
