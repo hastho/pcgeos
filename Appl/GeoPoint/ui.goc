@@ -54,7 +54,7 @@
 		@ScrapUIDocControl;
 	gcnList(MANUFACTURER_ID_GEOWORKS,GAGCNLT_SELF_LOAD_OPTIONS) =
 		@ScrapUIDocControl;
-	ATTR_GEN_HELP_FILE = "GeoPoint Help";
+	ATTR_GEN_HELP_FILE = "GeoPoint Master Help";
 }
 
 @visMoniker GeoPointTextMoniker = "GeoPoint";
