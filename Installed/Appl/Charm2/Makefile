@@ -6,8 +6,8 @@
 GEODE           = charm
 ASM_TO_OBJS     =
 UI_TO_RDFS      =
-SRCS            = MAP.goc APPUI.goc PROCESS.goc TEXT.goc global.goh app.goh
-OBJS            = MAP.obj APPUI.obj PROCESS.obj TEXT.obj
+SRCS            = Appui.goc Map.goc Process.goc Text.goc app.goh global.goh
+OBJS            = Appui.obj Map.obj Process.obj Text.obj
 LOBJS           =
 
 SYSMAKEFILE     = geode.mk
