@@ -3,13 +3,13 @@
 #
 # If you edit it, you will lose your changes, should it be regenerated.
 #
-GEODE           = BSD16
+GEODE           = bsd16
 ASM_TO_OBJS     = manager.asm
 UI_TO_RDFS      =
-SRCS            = bsdac.asm bsdelay.asm bserror.asm bsinit.asm bsint.asm\
-                  bsmixer.asm bsnwav.asm bsrecord.asm bsregs.asm\
-                  bsstrate.asm bsstream.asm bstimer.asm bsvoice.asm\
-                  bswav.asm manager.asm bsconst.def bserror.def
+SRCS            = bsError.asm bsInit.asm bsInt.asm bsVoice.asm manager.asm\
+                  bsDelay.asm bsStream.asm bsStrate.asm bsMixer.asm\
+                  bsDAC.asm bsTimer.asm bsWav.asm bsNWav.asm bsRecord.asm\
+                  bsRegs.asm bserror.def bsconst.def
 OBJS            = manager.obj
 LOBJS           =
 

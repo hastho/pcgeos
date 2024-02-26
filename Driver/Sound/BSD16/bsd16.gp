@@ -11,7 +11,7 @@
 #
 name bsd16.drvr
 #
-longname "Soundblaster 16 driver"
+longname "Sound Blaster 16 driver"
 #
 type	driver, single
 

@@ -51,7 +51,7 @@ SoundExtendedDriverInfoTable	DriverExtendedInfoTable <
 SoundBoardNames		lptr.char	cardName1
 			lptr.char	0
 
-cardName1		chunk.char	'Soundblaster Pro (or compatible)',0
+cardName1		chunk.char	'Sound Blaster Pro (or compatible)',0
 
 	;
 	;  The one word of data which gets used for all these

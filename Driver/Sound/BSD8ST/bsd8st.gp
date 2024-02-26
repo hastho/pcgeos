@@ -11,7 +11,7 @@
 #
 name bsd8st.drvr
 #
-longname "Soundblaster Pro driver"
+longname "Sound Blaster Pro driver"
 #
 type	driver, single
 
